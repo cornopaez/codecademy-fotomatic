@@ -41,6 +41,7 @@ header {
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
+  z-index: 20;
 }
 
 header .content {
@@ -77,7 +78,7 @@ header .mobile {
   display: none;
 }
 
-@media only screen and (max-width: 760px) {
+/*@media only screen and (max-width: 760px) {
   header .desktop {
     display: none;
   }
@@ -108,7 +109,7 @@ header .mobile {
     line-height: 1.6;
     color: white;
   }
-}
+}*/
 
 /* Sign Up Section */
 
@@ -117,13 +118,15 @@ header .mobile {
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
+  background: url(../images/banner-landingpage.jpg);
 }
 
 #sign-up-cta {
   padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
   border-radius: 4px;
-  background-color: #9dc20b;
+  background-color: #9dc20a;
+  margin: 10.625rem 6.25rem;
 }
 
 #sign-up-cta .content {
@@ -212,14 +215,14 @@ header .mobile {
 #features-section {
   display: flex;
   justify-content: space-between;
-  padding: 4rem 5%;
+  padding: 4rem 5% 2.875rem 5%;
   background-color: #f3f3f3;
 }
 
 .feature {
   flex: 1;
-  padding: 2rem;
-  margin: 0px 1.25rem;
+  padding: 2rem 2rem 0 2rem;
+  margin: 0px 1.1875rem;
   background-color: white;
 }
 
@@ -229,11 +232,22 @@ header .mobile {
   margin: 0 auto;
 }
 
+.feature .image-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.feature .content {
+  min-height: 11.6875rem;
+}
+
 .feature h2 {
   padding-bottom: .5rem;
+  padding-top: 2.5rem;
   font-size: 2.25rem;
   font-weight: bold;
   color: #4a4a4a;
+  line-height: 1.2;
 }
 
 .feature h3 {
@@ -284,6 +298,7 @@ header .mobile {
   font-size: 2.25rem;
   font-weight: bold;
   color: white;
+  opacity: 100%;
 }
 
 #filters-section .content h3 {
@@ -294,8 +309,14 @@ header .mobile {
 }
 
 #filters-section .images-container {
+  display: inline-flex;
   max-width: 100%;
   padding: 0 1%;
+}
+
+#filters-section .images-container img {
+  width: 100%;
+  height: 100%;
 }
 
 @media only screen and (max-width: 760px) {
